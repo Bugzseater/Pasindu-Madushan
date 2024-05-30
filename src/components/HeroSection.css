@@ -1,0 +1,145 @@
+/* HeroSection.css */
+:root{ 
+  --bs-blue: #0d6efd;
+--bs-indigo: #6610f2;
+--bs-purple: #6f42c1;
+--bs-pink: #d63384;
+--bs-red: #dc3545;
+--bs-orange: #fd7e14;
+--bs-yellow: #ffc107;
+--bs-green: #198754;
+--bs-teal: #20c997;
+--bs-cyan: #0dcaf0;
+--bs-white: #fff;
+--bs-gray: #6c757d;
+--bs-gray-dark: #343a40;
+--bs-gray-100: #f8f9fa;
+--bs-gray-200: #e9ecef;
+--bs-gray-300: #dee2e6;
+--bs-gray-400: #ced4da;
+--bs-gray-500: #adb5bd;
+--bs-gray-600: #6c757d;
+--bs-gray-700: #495057;
+--bs-gray-800: #343a40;
+--bs-gray-900: #212529;
+--bs-primary: #0d6efd;
+--bs-secondary: #6c757d;
+--bs-success: #198754;
+--bs-info: #0dcaf0;
+--bs-warning: #ffc107;
+--bs-danger: #dc3545;
+--bs-light: #f8f9fa;
+--bs-dark: #212529;
+--bs-primary-rgb: 13, 110, 253;
+--bs-secondary-rgb: 108, 117, 125;
+--bs-success-rgb: 25, 135, 84;
+--bs-info-rgb: 13, 202, 240;
+--bs-warning-rgb: 255, 193, 7;
+--bs-danger-rgb: 220, 53, 69;
+--bs-light-rgb: 248, 249, 250;
+--bs-dark-rgb: 33, 37, 41;
+--bs-white-rgb: 255, 255, 255;
+--bs-black-rgb: 0, 0, 0;
+--bs-body-color-rgb: 33, 37, 41;
+--bs-body-bg-rgb: 255, 255, 255;
+--bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--bs-gradient: linear-gradient(180deg,hsla(293, 83%, 19%, 0.885),hsla(251, 91%, 5%, 0.794));
+--bs-body-font-family: var(--bs-font-sans-serif);
+--bs-body-font-size: 1rem;
+--bs-body-font-weight: 400;
+--bs-body-line-height: 1.5;
+--bs-body-color: #212529;
+--bs-body-bg: #fff;
+}
+
+.hero-section {
+  background-color: var(--bs-body-color);
+  height: 85vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    color: var(--bs-blue);
+}
+.hero-text h2 {
+  font-size: 3rem;
+  color: var(--bs-blue);
+}
+span{
+  color: white;
+  font-size: 4rem;
+
+}
+.hero-text p {
+  margin-top: 20px;
+  color: #cbc8c8;
+}
+
+.hero-text button {
+  padding: 0.8rem 2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    width: 90%;
+    max-width: 400px;
+  }
+}
