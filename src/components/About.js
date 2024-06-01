@@ -42,7 +42,7 @@ const AboutSection = () => {
 
     return (
         
-        <section ref={aboutRef} className="about-section">
+        <section ref={aboutRef} className="about-section" id='about'>
             <div className="about-content">
                 <motion.div className="about-text" variants={textVariants} animate={isVisible ? "visible" : "hidden"}>
                     < motion.div className="title" variants={titleani} animate={isVisible ? "visible" : "hidden"}>
