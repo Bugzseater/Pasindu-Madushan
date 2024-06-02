@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import AboutSection from './components/About';
 import SkillSection from './components/SkillSection';
 import ProjectsSection from './components/ProjectsSection';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
       <HeroSection/>
       <AboutSection/>
       <SkillSection/>
-      <Footer/>
       <ProjectsSection/>
+      <ContactUs/>
+      <Footer/>
+      
     </div>
   );
 }

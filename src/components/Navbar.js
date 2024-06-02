@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './Navbar.css';
-import AboutSection from './About';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +14,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">Pasindu Madushan</div>
+        <motion.div className="logo" whileHover={{scale: 1.1}}>Pasindu Madushan</motion.div>
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li className="nav-item">Home</li>
+          <li className="nav-item"><a href='#home'>Home</a></li>
           <li className="nav-item"><a href='#about'>About</a></li>
-          <li className="nav-item">Project</li>
-          <li className="nav-item">Contact</li>
+          <li className="nav-item"><a href='#projects'>Projects</a></li>
+          <li className="nav-item"><a href='#contanct'>Contact</a></li>
         </ul>
         <FaBars className="menu-icon" onClick={toggleMenu} />
       </div>

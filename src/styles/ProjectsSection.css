@@ -1,6 +1,6 @@
 /* ProjectsSection.css */
 .projects-section {
-    background-color: #f9f9f9;
+    background-color: #212529;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -8,7 +8,7 @@
 .projects-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #d0cece;
 }
 
 .projects-grid {
@@ -17,9 +17,36 @@
     justify-content: center;
     gap: 2rem;
 }
+.projectsall-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.more {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+.more button {
+    background-color: #252525;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more button:hover {
+    background-color: #4a4b4b;
+}
 
 .project-card {
-    background-color: #fff;
+    background-color: #3b3b3c;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -43,7 +70,7 @@
 .project-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #e0dcdc;
 }
 
 .project-links {
@@ -55,7 +82,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #007BFF;
+    background-color: #474748;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -63,9 +90,6 @@
     transition: background-color 0.3s ease;
 }
 
-.project-link:hover {
-    background-color: #0056b3;
-}
 
 .project-link svg {
     font-size: 1.2rem;
@@ -80,5 +104,11 @@
     .project-card {
         width: 100%;
         max-width: 90%;
+    }
+    .more {
+        display: flex;
+        justify-content: center;
+       
+        margin-left: 0;
     }
 }

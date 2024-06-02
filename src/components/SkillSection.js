@@ -28,8 +28,8 @@ const SkillSection = () => {
     }, []);
 
     const textVariants = {
-        hidden: { scale:0.3 },
-        visible: { scale:1, transition: { duration: 2 } }
+        hidden: {opacity: 0, x: -100 },
+        visible: { opacity: 1, x:0, transition: { duration: 2 } }
     };
 
     return (
@@ -38,9 +38,9 @@ const SkillSection = () => {
             <div className="skill-list-container">
                 <div className="skill-list">
                     {skills.concat(skills).map((skill, index) => (
-                        <div key={index} className="skill-item">
+                        <motion.div whileHover={ {scale:0.5}} whileTap={{rotate:"2.5deg"}} key={index} className="skill-item">
                             {skill}
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

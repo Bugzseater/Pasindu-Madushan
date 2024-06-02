@@ -55,11 +55,15 @@
 
 .hero-section {
   background-color: var(--bs-body-color);
+  /* background-image: url(../images/bg.png); */
+  
+  /* background-size: cover; */
   height: 85vh;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .hero-content {

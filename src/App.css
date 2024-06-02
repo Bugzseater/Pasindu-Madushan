@@ -3,3 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+body{
+  background-image: url(./images/bg.png);
+  background-position: center;
+  background-size: cover;
+}
