@@ -37,6 +37,13 @@ const projects = [
         image: projectImage4,
         githubLink: 'https://github.com/Bugzseater/Currency-converter',
         demoLink: 'https://currency-converter-cyan-delta.vercel.app/'
+    },
+    {
+        id: 5,
+        title: 'POS SYSTEM',
+        image: projectImage5,
+        githubLink: 'https://github.com/Bugzseater/POS-for-Clotheshop',
+        demoLink: ''
     }
 ];
 
@@ -113,7 +120,7 @@ const ProjectsSection = () => {
                 ))}
             </div>
 
-            {!showMore && (
+            {/* {!showMore && (
                 <div className="more">
                     <button onClick={() => setShowMore(true)}>Show More</button>
                 </div>
@@ -146,7 +153,7 @@ const ProjectsSection = () => {
                         </motion.div>
                     ))}
                 </div>
-            )}
+            )} */}
         </section>
     );
 }
