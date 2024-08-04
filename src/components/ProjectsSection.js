@@ -6,7 +6,7 @@ import projectImage4 from '../images/CURRENCY CONVRTER.jpg';
 import projectImage2 from '../images/EXPENSE TRACKER.jpg';
 import projectImage3 from '../images/music player .jpg';
 import projectImage1 from '../images/note taking.jpg';
-import projectImage5 from '../images/pos.png';
+import projectImage5 from '../images/shop buddy.jpg';
 import '../styles/ProjectsSection.css';
 
 const projects = [
@@ -40,11 +40,11 @@ const projects = [
     },
     {
         id: 5,
-        title: 'POS SYSTEM',
+        title: 'SHOP BUDY',
         image: projectImage5,
-        githubLink: 'https://github.com/Bugzseater/POS-for-Clotheshop',
+        githubLink: 'https://github.com/Bugzseater/shop-buddy',
         demoLink: ''
-    }
+    },
 ];
 
 const projectsall = [
