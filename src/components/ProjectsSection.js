@@ -7,6 +7,7 @@ import projectImage2 from '../images/EXPENSE TRACKER.jpg';
 import projectImage3 from '../images/music player .jpg';
 import projectImage1 from '../images/note taking.jpg';
 import projectImage5 from '../images/shop buddy.jpg';
+import projectImage6 from '../images/tech shop .jpg';
 import '../styles/ProjectsSection.css';
 
 const projects = [
@@ -44,6 +45,13 @@ const projects = [
         image: projectImage5,
         githubLink: 'https://github.com/Bugzseater/shop-buddy',
         demoLink: ''
+    },
+    {
+        id: 6,
+        title: 'TECH SHOP',
+        image: projectImage6,
+        githubLink: 'https://github.com/Bugzseater/Sanity-stripe-next-14-Ecommerce',
+        demoLink: 'https://sanity-stripe-next-14-ecommerce.vercel.app/'
     },
 ];
 
